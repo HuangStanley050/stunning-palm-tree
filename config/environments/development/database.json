@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "database": "bookmark-api",
+        "host": "localhost:27017/mongo",
+        "srv": false,
+        "port": 27017,
+        "username": "",
+        "password": ""
+      },
+      "options": {
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}
