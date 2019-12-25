@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "book_marks": {
+      "collection": "book-mark",
+      "via": "category"
+    }
+  }
+}

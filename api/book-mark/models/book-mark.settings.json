@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "book_marks",
+  "info": {
+    "name": "BookMark"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Site_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    },
+    "ThumbNail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "via": "book_marks",
+      "model": "category"
+    },
+    "KeyWords": {
+      "type": "string"
+    }
+  }
+}
